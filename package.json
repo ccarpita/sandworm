@@ -1,0 +1,29 @@
+{
+  "name": "sandworm",
+  "version": "0.0.1",
+  "license" : "SEE LICENSE IN LICENSE.md",
+  "main": "./dist/bundle.js",
+  "scripts": {
+    "build": "yarn rollup && yarn babel",
+    "rollup": "rollup -c rollup.config.js",
+    "babel": "babel tmp  --out-dir dist",
+    "prepublish": "yarn build"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "rollup": "^0.47.6",
+    "rollup-plugin-commonjs": "^8.1.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rxjs": "^5.4.3"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "author": {
+    "name": "Chris Carpita",
+    "email": "ccarpita+npm@gmail.com",
+    "url": "https://github.com/ccarpita/"
+  }
+}
