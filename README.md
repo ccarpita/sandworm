@@ -1,4 +1,4 @@
-# Sandworm
+# Sandworm [![CircleCI](https://circleci.com/gh/ccarpita/sandworm.svg?style=svg)](https://circleci.com/gh/ccarpita/sandworm)
 
 > The Worm is the Spice!  The Spice is the Worm!
 > --Paul
