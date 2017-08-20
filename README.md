@@ -3,7 +3,7 @@
 > The Worm is the Spice!  The Spice is the Worm!
 > --Paul
 
-Sandworm is a library for easily mapping WWW and local file sources into an observable stream of structured records, which can be transformed using RxJS-operators.  It supports depth-first website crawling, DOM node extraction, and CSV/TSV files.  The common use of RxJS Observable objects in the API allows straightforward integrations with custom data sources and sinks.
+Sandworm is a set of reactive extensions for easily mapping web (HTML/REST) and local file sources into an observable stream of structured records, which can be transformed using RxJS-operators.  It supports depth-first website crawling, DOM node extraction, and CSV/TSV files.  The common use of RxJS Observable objects in the API allows straightforward integrations with other libraries that rely on these same primitives.
 
 ## Dependencies
 
@@ -11,9 +11,9 @@ The dependencies of Sandworm are rolled up into a single distribution file, whic
 
 | Name    | Version | Purpose |
 | ------- | ------- | ------- |
-| rxjs    | 5       | Used as the base library for Observable primitives which are extended with additional functionality (see: lib/rx-ext) |
-| cheerio | 0.22.0  | Provides jQuery-style expressions for DOM extraction, powering the `.extract()` API. |
-
+| rxjs    | 5     | Used as the base library for Observable primitives which are extended with additional functionality (see: lib/rx-ext) |
+| cheerio | 0.22  | Provides jQuery-style expressions for DOM extraction, powering the `.extract()` API. |
+| isomorphic-fetch | 2.2 | Provide a fetch-compatible API for simple 
 
 ## Install
 
